@@ -1,0 +1,432 @@
+/*----------------------------------------- page -----------------------------------------*/
+body {
+  margin: 0;
+}
+h1, h2, h3, h4, h5{
+  font-family: sans-serif;
+}
+section {
+  padding: 0 15% 0 6%;
+  margin-bottom: 40px;
+}
+.section-title {
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #173b6c;
+  font-size: 32px;
+  font-weight: 600;
+}
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+/*----------------------------------------- header -----------------------------------------*/
+header {
+  height: 100vh;
+  min-height: 600px;
+  width: 320px;
+  padding: 0;
+  overflow-y: auto;
+  background-color: #040b14;
+}
+/*----------------------------------------- home -----------------------------------------*/
+#home {
+  width: 100%;
+  height: 100vh;
+  background: url("img/profile.jpg");
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  padding: 0;
+}
+#home:before {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  content: "";
+  background-color: rgba(36, 36, 36, 0.3);
+}
+#home .home {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#home h1 {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  line-height: 56px;
+  color: white;
+}
+#home p {
+  color: white;
+}
+@media (min-width: 400px) {
+  .home h1 {
+    font-size: 42px;
+  }
+  .home p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .home h1 {
+    font-size: 60px;
+  }
+  .home p {
+    font-size: 26px;
+  }
+}
+/*----------------------------------------- profile -----------------------------------------*/
+.profile img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 5% auto;
+  object-fit: cover;
+  object-position: 0 0;
+  border: 8px solid #2c2f3f;
+  border-radius: 50%;
+}
+.profile h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.profile a, .profile a:hover {
+  color: white;
+  text-decoration: none;
+}
+.social-links {
+  text-align: center;
+}
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  margin-right: 6px;
+  margin-top: 15px;
+  font-size: 14px;
+  background-color: #212431;
+  color: white;
+  line-height: 2.5;
+  text-align: center;
+  border-radius: 50%;
+}
+.social-links a:hover {
+  background-color: #149ddd;
+  color: white;
+  text-decoration: none;
+}
+/*----------------------------------------- navigation -----------------------------------------*/
+nav {
+  padding: 0;
+  margin: 40px 0 0 30px;
+  list-style: none;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  color: #6f7180;
+  text-decoration: none;
+}
+nav li {
+  margin-top: 30px;
+}
+nav a i, nav a:focus i {
+  padding-right: 8px;
+  color: #6f7180;
+  font-size: 24px;
+}
+nav a:hover, nav li:hover > a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover i, nav li:hover > a i {
+  color: #149ddd;
+}
+/*----------------------------------------- about -----------------------------------------*/
+#about .section-title {
+  padding-bottom: 0;
+}
+#about img {
+  width: 100%;
+  max-height: 500px;
+  margin-top: 20px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+.content h3 {
+  margin-top: 20px;
+  color: #173b6c;
+  font-weight: 700;
+  font-size: 26px;
+}
+.content span {
+  padding-left: 5px;
+}
+.content ul {
+  list-style: none;
+  padding-left: 0;
+}
+.content li {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.content li::before {
+  padding-right: 4px;
+  content: "\203A";
+  color: rgb(20, 157, 221);
+  font-size: 25px;
+}
+.content .extra {
+  margin-left: 16px;
+}
+/*----------------------------------------- facts -----------------------------------------*/
+.count {
+  width: 100%;
+  padding: 30px;
+}
+.count i {
+  display: block;
+  padding-top: 20px;
+  margin-left: -10px;
+  color: #149ddd;
+  float: left;
+  font-size: 40px;
+  line-height: 0;
+}
+.count span {
+  display: block;
+  margin-left: 60px;
+  color: #050d18;
+  font-size: 48px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.count p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  color: #122f57;
+  font-size: 14px;
+}
+/*----------------------------------------- skills -----------------------------------------*/
+.skills {
+  background-color: #f5f8fd;
+}
+.skills .progress {
+  height: 60px;
+  background-color: #f5f8fd;
+  box-shadow: none;
+}
+.progress .skill {
+  display: block;
+  color: #050d18;
+  font-weight: 600;
+}
+.progress .skill .val {
+  float: right;
+}
+.progress-bar-wrap {
+  height: 10px;
+  background-color: #dce8f8;
+}
+.skills .progress-bar {
+  height: 10px;
+  background-color: #149ddd;
+}
+.skills .bar1 {
+  width: 70%;
+}
+.skills .bar2 {
+  width: 30%;
+}
+.skills .bar3 {
+  width: 80%;
+}
+.skills .bar4 {
+  width: 90%;
+}
+.skills .bar5 {
+  width: 65%;
+}
+.skills .bar6 {
+  width: 15%;
+}
+/*----------------------------------------- resume -----------------------------------------*/
+.resume-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+  font-size: 26px;
+  font-weight: 700;
+}
+.resume-item {
+  position: relative;
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+}
+.resume-item h4 {
+  color: #050d18;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.resume-item h5 {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #e4edf9;
+  font-size: 16px;
+  font-weight: 600;
+}
+.resume-item ul {
+  padding-left: 20px;
+}
+.resume-item::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -9px;
+  top: 0;
+  background-color: white;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+  content: "";
+}
+.printer-link {
+  padding-left: 80px;
+  font-size: 18px;
+  font-weight: 600;
+}
+/*----------------------------------------- math & svg -----------------------------------------*/
+.math1 {
+  font-size: 20px;
+  padding-top: 100px;
+}
+.math2 {
+  font-size: 16px;
+  padding-top: 70px;
+}
+.math, .paint {
+  text-align: center;
+}
+svg {
+  width: 250px;
+}
+@media (max-width: 980px) {
+  .math1 {
+    padding-top: 0;
+  }
+  .math2 {
+    padding-bottom: 60px;
+  }
+  svg {
+    width: 200px;
+  }
+}
+/*----------------------------------------- contacts -----------------------------------------*/
+.info, .send {
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 40px;
+  background-color: white;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.info i {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  color: #149ddd;
+  background-color: #dff3fc;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.info iframe {
+  width: 100%;
+  height: 305px;
+}
+.info h4 {
+  margin-bottom: 5px;
+  padding: 0 0 0 60px;
+  color: #050d18;
+  font-size: 20px;
+  font-weight: 600;
+}
+.info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  color: #173b6c;
+  font-size: 14px;
+}
+.info .email:hover i, .info .address:hover i, .info .phone:hover i {
+  background-color: #149ddd;
+  color: white;
+}
+.send label {
+  padding-bottom: 10px;
+}
+.send input {
+  height: 40px;
+}
+.send textarea {
+  padding: 19px 15px;
+}
+.send input, .send textarea {
+  border-radius: 0;
+  font-size: 14px;
+}
+.send button {
+  padding: 10px 24px;
+  background-color: #149ddd;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #37b3ed;
+}
+/*----------------------------------------- copyright -----------------------------------------*/
+.copyright {
+  text-align: center;
+  color: white;
+  background-color: rgb(4, 11, 20);
+  margin-top: 40px;
+  padding: 1vh;
+  margin-bottom: 0;
+}
+.copyright > p {
+  font-size: 14px;
+  margin: 6px;
+}
+.copyright_link {
+  color: rgb(20, 157, 221);
+  text-decoration: none;
+}
+.copyright_link:hover {
+  color: rgb(96, 183, 255);
+}

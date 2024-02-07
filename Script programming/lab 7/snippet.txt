@@ -1,0 +1,23 @@
+{
+	"Snippet": {
+		"prefix": "html-struc",
+		"body": [
+			"<!-- Klaidas Karalevičius EDIf-22 -->"
+			"<!DOCTYPE html>",
+			"<html>",
+			"<head>",
+			"<meta charset=\"UTF-8\">",
+			"<meta name=\"Author\" content=\"Klaidas Karalevičius\">",
+			"<meta name=\"description\" content=\"Skriptinio programavimo laboratoriniai\">",
+			"<link rel=\"stylesheet\" href=\"$1\">",
+			"</head>",
+			"<body>",
+			"<h2>$2</h2>",
+			"<p>$3</p>",
+			"<a href=\"http://www.vilniustech.lt\" target=\"_blank\">VGTU</a>",
+			"</body>",
+			"</html>"
+		],
+		"description": "Inserts basic HTML doc structure"
+	}
+}
